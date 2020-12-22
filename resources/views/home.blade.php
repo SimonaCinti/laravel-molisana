@@ -12,6 +12,16 @@
 
     </head>
     <body>
-        <h1>Lorem</h1>
+        {{-- Header --}}
+        <header>
+            <a href="/" class="brand"> Site Logo</a>
+        </header>
+        {{-- Main --}}
+        <main>
+            <h1>Homepage</h1>
+        </main>
+        <footer>
+             <p>Site La Molisana</p>
+        </footer>
     </body>
 </html>
