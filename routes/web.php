@@ -16,5 +16,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     include 'database/data.php'; // pasta date
     // dd($data); //log database
-    return view('home', ['cards' => $data]);
+
+    $lunghe = [];
+    $corte = [];
+    $cortissime = [];
+
+    foreach ($data as $card){
+        if($card['tipo'] == 'lunga'){
+            $lunghe[] = $card;
+        }
+        elseif ($card['tipo'] == 'corta'){
+            $corte[] = $card;
+        }
+        elseif ($card['tipo'] == 'cortissima'){
+            $cortissime[] = $card;
+        }
+    }
+
+    return view('home', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
 });
