@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    include_once 'database/data.php'; // pasta date
+    //dd($data); //log database
+    return view('home', ['cards => $data']);
 });

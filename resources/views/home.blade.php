@@ -8,20 +8,18 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <!-- CSS -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     </head>
     <body>
-        {{-- Header --}}
-        <header>
-            <a href="/" class="brand"> Site Logo</a>
-        </header>
+        <!-- Header -->
+        @include('partials.header')
         {{-- Main --}}
         <main>
             <h1>Homepage</h1>
         </main>
-        <footer>
-             <p>Site La Molisana</p>
-        </footer>
+        <!-- Footer -->
+        @include('partials.footer')
     </body>
 </html>
