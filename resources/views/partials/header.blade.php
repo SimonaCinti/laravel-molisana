@@ -3,7 +3,9 @@
 --}}
 
 <header>
-    <a href="/" class="brand"> 
+    <div class="container">
+       <a href="/" class="brand"> 
     <img src="{{asset('img/logo.png') }}" alt="La Molisana Logo">
-    </a>
+    </a> 
+    </div>  
 </header>

@@ -53,3 +53,22 @@ body {
 .grow-1 {
   flex-grow: 1;
 }
+
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto 20px;
+  padding: 0 16px;
+}
+
+.card {
+  flex-basis: 32%;
+  margin-right: 1%;
+  margin-bottom: 15px;
+}
+.card img {
+  width: 100%;
+}
