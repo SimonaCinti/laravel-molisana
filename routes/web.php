@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// HOMEPAGE
 Route::get('/', function () {
     include 'database/data.php'; // pasta date
     // dd($data); //log database
@@ -21,7 +22,10 @@ Route::get('/', function () {
     $corte = [];
     $cortissime = [];
 
-    foreach ($data as $card){
+    foreach ($data as $key => $card){
+        
+        $card['id'] = $key;
+
         if($card['tipo'] == 'lunga'){
             $lunghe[] = $card;
         }
@@ -32,6 +36,25 @@ Route::get('/', function () {
             $cortissime[] = $card;
         }
     }
+    // dd($lunghe, $corte, $cortissime); // dd id
 
     return view('home', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
-});
+})->name('home');
+
+// PRODUCT DETAIL PAGE
+
+Route::get('/product/{id}', function($id) {
+    // dump($id);
+
+    include 'database/data.php';
+
+    $product = $data[$id];
+
+    return view('product', ['product' => $product]);
+})->name('product');
+
+
+// NEWS PAGE
+Route::get('/news', function () {
+    return view('news');
+})->name('news');
