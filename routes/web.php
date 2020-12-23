@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 // HOMEPAGE
 Route::get('/', function () {
-    include 'database/data.php'; // pasta date
+    $data = config('site-data');
     // dd($data); //log database
 
     $lunghe = [];
@@ -38,7 +38,9 @@ Route::get('/', function () {
     }
     // dd($lunghe, $corte, $cortissime); // dd id
 
-    return view('home', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
+    // return view('home', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
+    return view('home', compact('lunghe', 'corte', 'cortissime'));
+
 })->name('home');
 
 // PRODUCT DETAIL PAGE
@@ -46,11 +48,13 @@ Route::get('/', function () {
 Route::get('/product/{id}', function($id) {
     // dump($id);
 
-    include 'database/data.php';
+    $data = config('site-data');
 
     $product = $data[$id];
+    $length = count($data) -1;
 
-    return view('product', ['product' => $product]);
+
+    return view('product', compact('product', 'length', 'id'));
 })->name('product');
 
 
