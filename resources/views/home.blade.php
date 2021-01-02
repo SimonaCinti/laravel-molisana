@@ -7,9 +7,9 @@
     <div class="cards flex wrap">
         @foreach ($lunghe as $card)
         <div class="card">
-            <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
-            <h3>{{ $card['titolo'] }}</h3>
-            <a href="{{route('product', $card['id'])}}">Vedi Prodotto</a>
+            <a href="{{route('product', $card['id'])}}">
+                <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
+            </a>
         </div>        
         @endforeach
     </div>
@@ -20,9 +20,9 @@
     <div class="cards flex wrap">
         @foreach ($corte as $card)
         <div class="card">
-            <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
-            <h3>{{ $card['titolo'] }}</h3>
-            <a href="{{route('product', $card['id'])}}">Vedi Prodotto</a>
+            <a href="{{route('product', $card['id'])}}"> 
+                <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
+            </a>
         </div>        
         @endforeach
     </div>
@@ -33,9 +33,9 @@
     <div class="cards flex wrap">
         @foreach ($cortissime as $card)
         <div class="card">
-            <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
-            <h3>{{ $card['titolo'] }}</h3>
-            <a href="{{route('product', $card['id'])}}">Vedi Prodotto</a>
+            <a href="{{route('product', $card['id'])}}">
+                <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
+            </a>
         </div>        
         @endforeach
     </div>

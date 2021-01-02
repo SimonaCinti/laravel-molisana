@@ -1,0 +1,14 @@
+footer {
+    color: $footerColor;
+    min-height: 700px;
+    background-image: url('../img/footer-montagne-bottom.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    .footer-section{
+        flex-basis: calc(33% - 20px);
+        padding: 40px 0;
+    }
+    ul {
+        list-style: none;
+    }
+}

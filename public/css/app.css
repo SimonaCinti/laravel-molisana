@@ -113,3 +113,18 @@ main h2 {
   font-size: 35px;
   font-weight: bold;
 }
+
+footer {
+  color: #848d9b;
+  min-height: 700px;
+  background-image: url("../img/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+footer .footer-section {
+  flex-basis: calc(33% - 20px);
+  padding: 40px 0;
+}
+footer ul {
+  list-style: none;
+}
