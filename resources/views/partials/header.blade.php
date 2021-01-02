@@ -8,10 +8,13 @@
     </a>
     <nav>
         <li>
-            <a href="{{route('home')}}">HOME</a>
+            <a href="{{route('home')}}">Home</a>
+        </li>
+        <li> 
+            <a href="\">Prodotti</a>
         </li>
         <li>
-            <a href="{{route('news')}}">NEWS</a>
+            <a href="{{route('news')}}">News</a>
         </li>
     </nav>  
 </header>
