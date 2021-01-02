@@ -6,11 +6,15 @@
     <div class="navigation">
         @if($id > 0)
             <a href="{{route('product', $id - 1)}}">&lt; PREV</a>
+        @elseif($id == 0)
+            <a href="{{route('product', $length)}}">&lt; PREV</a>
         @endif
     </div>
     <div class="navigation">
         @if($id < $length )
             <a href="{{route('product', $id + 1)}}">NEXT &gt;</a>
+        @elseif($id = $length)
+            <a href="{{route('product', 0)}}">NEXT &gt; </a>
         @endif
     </div>
     <div class="container">
