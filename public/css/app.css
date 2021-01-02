@@ -137,3 +137,45 @@ footer ul {
 footer .footer-link li {
   margin-top: 5px;
 }
+
+.product-detail {
+  position: relative;
+  text-align: center;
+  color: #002d73;
+  background: #b8dae4;
+}
+
+.navigation {
+  position: absolute;
+}
+
+.navigation:first-child {
+  top: 50%;
+}
+
+.navigation:nth-child(2) {
+  top: 50%;
+  right: 0;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  padding-top: 40px;
+}
+.hero h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+.description {
+  background: #b8dae4;
+  text-align: left;
+  font-weight: bold;
+  padding: 40px;
+}

@@ -1,0 +1,41 @@
+.product-detail {
+    position: relative;
+    text-align: center;
+    color: $secondaryColor;
+    background: $productColor;
+}
+
+.navigation {
+    position: absolute;
+}
+
+.navigation:first-child {
+    top: 50%;
+}
+
+.navigation:nth-child(2) {
+    top: 50%;
+    right: 0;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    padding-top: 40px;
+    h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.description{
+    background: $productColor;
+    text-align: left;
+    font-weight: bold;
+    padding: 40px;
+}
