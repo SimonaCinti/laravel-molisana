@@ -1,0 +1,11 @@
+main {
+    background-image: url('../img/fondo-pag-speciali.jpg');
+    background-position: top;
+    margin-top: 20px;
+    h2 {
+        color: $secondaryColor;
+        padding: 35px 0;
+        font-size: 35px;
+        font-weight: bold;
+    }
+}
