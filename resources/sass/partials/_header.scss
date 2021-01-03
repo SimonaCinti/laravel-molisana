@@ -21,5 +21,16 @@ header {
             }
         }
     }
+}
+// MEDIAQUERY TABLET
+
+@media screen and (max-width:768px){
+    nav > li {
+        display: none;
+    }
+    .fa-bars{
+        color: $secondaryColor;
+        font-size: 38px;
+    }
 
 }
