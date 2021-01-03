@@ -106,6 +106,16 @@ header li a:hover {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .cards.flex {
+    justify-content: space-between;
+  }
+
+  .card {
+    flex-basis: calc(50% - 10px);
+    margin: 0;
+  }
+}
 main {
   background-image: url("../img/fondo-pag-speciali.jpg");
   background-position: top;
@@ -148,14 +158,20 @@ footer .footer-link li {
 .navigation {
   position: absolute;
 }
-
 .navigation:first-child {
   top: 50%;
+  left: 0%;
 }
-
 .navigation:nth-child(2) {
   top: 50%;
-  right: 0;
+  right: 0%;
+}
+.navigation i {
+  color: white;
+  font-size: 48px;
+  background-color: #dcedf2;
+  padding: 20px 10px;
+  border-radius: 5px;
 }
 
 .hero {

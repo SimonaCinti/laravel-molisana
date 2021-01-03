@@ -6,3 +6,13 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width:768px){
+    .cards.flex{
+        justify-content: space-between;
+    }
+    .card {
+        flex-basis: calc(50% - 10px);
+        margin: 0;
+    }
+}

@@ -20,5 +20,6 @@ mix.js('resources/js/app.js', 'public/js')
         proxy: 'http://127.0.0.1:8000',
         watch: true,
         files: ['./**/*.css', './**/*.js', './**/*.+(html|php)'],
-        //tunnel: true, //for mobile
+        tunnel: true, //for mobile
+        open: "tunnel", //for mobile
     });
